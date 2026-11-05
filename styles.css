@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@font-face {
+    font-family: 'inter';
+    src: url(./Fonts/Inter/static/Inter_18pt-Medium.ttf);
+}
+a{
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    font-family: 'alter', sans-serif;
+}
+.header{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    width: 60%;
+    height: 150px;
+    justify-content: space-between;
+}
+.header-left{
+    display: flex;
+    gap: 50px;
+}
+.header-right{
+    position: relative;
+    top: 20px;
+    right: 15%;
+    i{
+        font-size: 40px;
+        color: white;
+    }
+}
+.header-image{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 120px;
+    img{
+        width: 300px;
+        height: 120px;
+    }
+}
+.header-links{
+    display: flex;
+    gap: 10px;
+    height: 60px;
+    a{
+        position: relative;
+        top: 30px;
+        height: 50%;
+    }
+}
+.sect-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image: url(https://static.wixstatic.com/media/84770f_5ae5126b4e354dafbc411bb4177c5a88~mv2.jpg/v1/fill/w_1688,h_849,fp_0.51_0.58,q_85,usm_0.66_1.00_0.01,enc_auto/tamara-harhai-HkUiYII50qI-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 1000px;
+}
+.sectone-info{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sectone-header{
+    font-size: 150px;
+    color: white;
+    font-family: 'alter', sans-serif;
+}
+.sectone-text{
+    font-size: 30px;
+    color: white;
+    font-family: 'alter', sans-serif;
+}
+.sectone-button{
+    display: flex;
+    justify-content: center;
+    button{
+        width: 150px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+}
+.sect-two{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    background-color: black;
+    height: 1000px;
+    gap: 20px;
+}
+.secttwo-image{
+    height: 100%;
+    width: 30vw;
+    margin-right: 5vw;
+    img{
+        position: relative;
+        left: 100px;
+        height: 100%;
+        width: 30vw;
+    }
+}
+.secttwo-header{
+    height: 15%;
+    h2{
+        position: relative;
+        top: 60px;
+        left: 60px;
+        font-family: 'alter', sans-serif;
+        font-size: 55px;
+        color: white;
+        font-weight: bold;
+    }
+}
+.secttwo-more{
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+    height: 85%;
+    width: 100%;
+}
+.secttwo-innersect{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 12%;
+    position: relative;
+    top: 40px;
+    a{
+        font-size: 35px;
+        font-weight: bold;
+    }
+    p{
+        font-family: 'alter', sans-serif;
+        color: white;
+        font-size: 22px;
+    }
+}
+.secttwo-i-text{
+    display: flex;
+    flex-direction: column;
+    gap: 10%;
+    min-width: 350px;
+    
+}
+.secttwo-i-button{
+    button{
+        min-width: 200px;
+        height: 40px;
+        background-color: red;
+        border: none;
+        border-radius: 5px;
+        a{
+            font-size: 14px;
+        }
+    }
+}
+.sect-three{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 1000px;
+    background-color: pink;
+}
+.sectthree-header-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    
+}
+.sectthree-header{
+    
+    h2{
+        font-family: 'alter', sans-serif;
+        font-size: 72px;
+        font-weight: bold;
+    }
+}
