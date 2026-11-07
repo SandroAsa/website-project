@@ -3,14 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-@font-face {
-    font-family: 'inter';
-    src: url(./Fonts/Inter/static/Inter_18pt-Medium.ttf);
-}
-@font-face {
-    font-family: 'publicsans';
-    src: url(./Fonts/PublicSans/static/PublicSans-Medium.ttf);
-}
 html{
     overflow-x: hidden;
     width: 100vw;
@@ -34,12 +26,13 @@ a{
 .sectone-info{
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 .sectone-header{
     font-size: 150px;
     color: white;
     font-family: 'alter', sans-serif;
+    font-weight: bolder;
 }
 .sectone-text{
     font-size: 30px;
@@ -49,6 +42,7 @@ a{
 .sectone-button{
     display: flex;
     justify-content: center;
+
     button{
         width: 150px;
         height: 50px;
@@ -56,6 +50,8 @@ a{
         color: white;
         border: none;
         border-radius: 5px;
+        font-family: 'publicsans', sans-serif;
+        font-size: 20px;
     }
 }
 .sect-two{
@@ -100,8 +96,7 @@ a{
     flex-direction: row;
     justify-content: space-between;
     height: 12%;
-    position: relative;
-    top: 40px;
+
     a{
         font-size: 35px;
         font-weight: bold;
@@ -121,15 +116,20 @@ a{
 }
 .secttwo-i-button{
     padding-right: 100px;
+    height: 40px;
+    width: 400px;
+    a{
+        height: 40px;
+    }
     button{
-        min-width: 200px;
+        width: 200px;
         height: 40px;
         background-color: red;
         border: none;
         border-radius: 5px;
-        a{
-            font-size: 14px;
-        }
+        font-family: 'publicsans', sans-serif;
+        font-size: 22px;
+        color: white;
     }
 }
 .sect-three{
@@ -271,7 +271,7 @@ a{
     }
 }
 .sectfive-info-text{
-    width: 25%;
+    width: 40%;
     p{
         font-family: 'publicsans', sans-serif;
         font-size: 20px;
@@ -318,6 +318,7 @@ a{
     flex-direction: column;
     gap: 24px;
 }
+
 .sectfive-card-info-header{
     padding-left: 12px;
     h2{
@@ -335,6 +336,7 @@ a{
     p{
         font-family: 'publicsans', sans-serif;
         font-size: 16px;
+        color: black;
     }
 }
 .clamp{
@@ -354,4 +356,29 @@ a{
     font-family: 'publicsans', sans-serif;
     font-size: 24px;
     
+}
+.sectone-button button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.secttwo-i-text a:hover{
+    cursor: pointer;
+    color: gray;
+}
+.secttwo-i-button button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sectthree-info-button button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+.sectfive-card-info-info:hover{
+    p, h2{
+        color: red;
+    }
+}
+.sectfive-button button:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }

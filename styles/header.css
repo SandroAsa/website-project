@@ -23,6 +23,9 @@
         font-size: 40px;
         color: white;
     }
+    a:hover{
+        color: gray;
+    }
 }
 .header-image{
     position: relative;
@@ -43,4 +46,8 @@
         top: 30px;
         height: 50%;
     }
+    a:hover{
+        text-decoration: underline;
+    }
+    
 }
