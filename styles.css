@@ -7,6 +7,10 @@
     font-family: 'inter';
     src: url(./Fonts/Inter/static/Inter_18pt-Medium.ttf);
 }
+html{
+    overflow-x: hidden;
+    width: 100%;
+}
 a{
     font-size: 20px;
     color: white;
@@ -23,6 +27,7 @@ a{
     width: 60%;
     height: 150px;
     justify-content: space-between;
+    z-index: 1000;
 }
 .header-left{
     display: flex;
@@ -156,6 +161,7 @@ a{
     
 }
 .secttwo-i-button{
+    padding-right: 100px;
     button{
         min-width: 200px;
         height: 40px;
@@ -171,15 +177,13 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 1000px;
-    background-color: pink;
+    height: 775px;
 }
 .sectthree-header-container{
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: 50%;
-    
+    padding-left: 100px;
+    height: 20%;
 }
 .sectthree-header{
     
@@ -188,4 +192,52 @@ a{
         font-size: 72px;
         font-weight: bold;
     }
+}
+.sectthree-info{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 50px 100px;
+}
+.sectthree-info-text{
+    max-width: 25%;
+    p{
+        font-family: 'alter', sans-serif;
+        font-size: 22px;
+    }
+}
+.sectthree-info-button{
+    button{
+        width: 250px;
+        height: 50px;
+        background-color: red;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 25px;
+    }
+}
+.sectthree-cards{
+    padding: 100px 100px 0px 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+.sectthree-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 100%;
+    height: 300px;
+    background-color: #e5ecf4c5;
+    border-radius: 8px;
+}
+.sectthree-card-svg{
+    padding: 24px;
+}
+.sectthree-card-text{
+    padding: 24px ;
+    font-family: 'alter', sans-serif;
+    font-size: 36px;
+    font-weight: bold;
 }
