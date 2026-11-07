@@ -13,58 +13,13 @@
 }
 html{
     overflow-x: hidden;
-    width: 100%;
+    width: 100vw;
 }
 a{
     font-size: 20px;
     color: white;
     text-decoration: none;
     font-family: 'alter', sans-serif;
-}
-.header{
-    display: flex;
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translate(-50%);
-    background-color: black;
-    width: 60%;
-    height: 150px;
-    justify-content: space-between;
-    z-index: 1000;
-}
-.header-left{
-    display: flex;
-    gap: 50px;
-}
-.header-right{
-    position: relative;
-    top: 20px;
-    right: 15%;
-    i{
-        font-size: 40px;
-        color: white;
-    }
-}
-.header-image{
-    position: relative;
-    top: 10%;
-    left: 5%;
-    height: 120px;
-    img{
-        width: 300px;
-        height: 120px;
-    }
-}
-.header-links{
-    display: flex;
-    gap: 10px;
-    height: 60px;
-    a{
-        position: relative;
-        top: 30px;
-        height: 50%;
-    }
 }
 .sect-one{
     display: flex;
@@ -290,4 +245,113 @@ a{
         font-family: 'publicsans', sans-serif;
         font-size: 24px;
     }
+}
+.sect-five{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 1050px;
+    background-color: #e5ecf4;
+    gap: 24px;
+}
+.sectfive-info{
+    display: flex;
+    flex-direction: column;
+    padding: 48px 0px;
+    gap: 32px;
+    align-items: center;
+}
+.sectfive-info-header{
+    padding-top: 48px;
+    h2{
+        font-family: 'alter', sans-serif;
+        font-size: 72px;
+        font-weight: bold;
+    }
+}
+.sectfive-info-text{
+    width: 25%;
+    p{
+        font-family: 'publicsans', sans-serif;
+        font-size: 20px;
+    }
+}
+.sectfive-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 50%;
+    gap: 24px;
+    padding-bottom: 48px;
+}
+.sectfive-card{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 5px;
+}
+.sectfive-card-image{
+    height: 300px;
+    img{
+        height: 300px;
+        border-radius: 5px;
+    }
+}
+.sectfive-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sectfive-card-info-date{
+    padding-left: 12px;
+    p{
+        font-family: 'publicsans', sans-serif;
+        font-size: 12px;
+        font-weight: lighter;
+    }
+}
+.sectfive-card-info-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sectfive-card-info-header{
+    padding-left: 12px;
+    h2{
+        font-family: 'alter', sans-serif;
+        font-size: 24px;
+        color: black;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+.sectfive-card-info-text{
+    padding: 0px 12px;
+    p{
+        font-family: 'publicsans', sans-serif;
+        font-size: 16px;
+    }
+}
+.clamp{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.sectfive-button button{
+    background-color: red;
+    border: none;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    color: white;
+    font-family: 'publicsans', sans-serif;
+    font-size: 24px;
+    
 }

@@ -1,0 +1,46 @@
+.header{
+    display: flex;
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    border-radius: 5px;
+    width: 60%;
+    height: 150px;
+    justify-content: space-between;
+    z-index: 1000;
+}
+.header-left{
+    display: flex;
+    gap: 50px;
+}
+.header-right{
+    position: relative;
+    top: 20px;
+    right: 15%;
+    i{
+        font-size: 40px;
+        color: white;
+    }
+}
+.header-image{
+    position: relative;
+    top: 10%;
+    left: 5%;
+    height: 120px;
+    img{
+        width: 300px;
+        height: 120px;
+    }
+}
+.header-links{
+    display: flex;
+    gap: 10px;
+    height: 60px;
+    a{
+        position: relative;
+        top: 30px;
+        height: 50%;
+    }
+}
