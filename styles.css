@@ -7,6 +7,10 @@
     font-family: 'inter';
     src: url(./Fonts/Inter/static/Inter_18pt-Medium.ttf);
 }
+@font-face {
+    font-family: 'publicsans';
+    src: url(./Fonts/PublicSans/static/PublicSans-Medium.ttf);
+}
 html{
     overflow-x: hidden;
     width: 100%;
@@ -240,4 +244,50 @@ a{
     font-family: 'alter', sans-serif;
     font-size: 36px;
     font-weight: bold;
+}
+.sect-four{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 1000px;
+    background-image: url(https://static.wixstatic.com/media/61449d37e2c84f6ca369b41542d785a3.jpg/v1/fill/w_2213,h_962,fp_0.50_0.50,q_90,usm_0.66_1.00_0.01,enc_auto/Misty%20Mountain%20Landscape.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.sectfour-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 20%;
+    height: 50%;
+    background-color: white;
+    border-radius: 5px;
+}
+.sectfour-card-header{
+    padding: 24px 0px 0px 24px;
+    h2{
+        font-size: 64px;
+        font-family: 'alter', sans-serif;
+        font-weight: bold;
+    }
+}
+.sectfour-card-info{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.sectfour-card-text{
+    padding: 0px 24px;
+    p{
+        font-family: 'publicsans', sans-serif;
+        font-size: 24px;
+    }
+}
+.sectfour-card-cite{
+    padding: 24px;
+    p{
+        font-family: 'publicsans', sans-serif;
+        font-size: 24px;
+    }
 }
