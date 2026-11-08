@@ -143,7 +143,6 @@ a{
     display: flex;
     align-items: center;
     padding-left: 5vw;
-    padding-right: 5vw;
     height: auto;
     min-height: 20%;
 }
@@ -440,6 +439,10 @@ a{
     }
 }
 @media screen and (max-width: 1024px) {
+    .sectthree-info{
+        flex-direction: column;
+        gap: 24px;
+    }
     .sectthree-cards{
         grid-template-columns: 1fr 1fr;
     }
@@ -447,10 +450,42 @@ a{
         width: 50%;
         justify-content: space-around;
     }
+@media screen and (max-width: 900px) {
+    .sectthree-info-text{
+        width: 75vw;
+        p{
+            width: 60vw;
+        }
+    }
+}
 }
 @media screen and (max-width: 700px){
     .sectthree-cards{
         grid-template-columns: 1fr;
         padding: 0px 24px;
+    }
+    .sectthree-info{
+        padding: 50px 0px 50px 48px;
+    }
+    .sectthree-header-container{
+        padding-left: 48px;
+    }
+}
+@media screen and (max-width: 624px) {
+    .secttwo-more{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .secttwo-innersect{
+        flex-direction: column;
+    }
+    .secttwo-i-price{
+        padding: 5%;
+    }
+    .secttwo-i-button{
+        padding: 0 5%;
+        button{
+            width: 100px;
+        }
     }
 }
