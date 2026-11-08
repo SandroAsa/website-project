@@ -5,7 +5,7 @@
 }
 html{
     overflow-x: hidden;
-    width: 100vw;
+    width: 100%;
 }
 a{
     font-size: 20px;
@@ -58,26 +58,23 @@ a{
     display: grid;
     grid-template-columns: 1fr 2fr;
     background-color: black;
-    height: 1000px;
+    height: auto;
     gap: 20px;
 }
 .secttwo-image{
     height: 100%;
     width: 30vw;
-    margin-right: 5vw;
+    padding-left: 10%;
     img{
-        position: relative;
-        left: 100px;
         height: 100%;
-        width: 30vw;
+        width: calc(30vw - 10%);
     }
 }
 .secttwo-header{
     height: 15%;
+    padding: 40px 0 20px 60px;
     h2{
-        position: relative;
-        top: 60px;
-        left: 60px;
+
         font-family: 'alter', sans-serif;
         font-size: 55px;
         color: white;
@@ -95,6 +92,7 @@ a{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    width: 100%;
     height: 12%;
 
     a{
@@ -117,18 +115,20 @@ a{
 .secttwo-i-button{
     padding-right: 100px;
     height: 40px;
-    width: 400px;
+    width: 15%;
+    container-type: inline-size;
     a{
         height: 40px;
     }
     button{
-        width: 200px;
+        width: 100%;
+        min-width: 60px;
         height: 40px;
         background-color: red;
         border: none;
         border-radius: 5px;
         font-family: 'publicsans', sans-serif;
-        font-size: 22px;
+        font-size: clamp(1rem, 6cqw, 1.5rem);
         color: white;
     }
 }
@@ -136,19 +136,22 @@ a{
     display: flex;
     flex-direction: column;
     width: 100%;
-    height: 775px;
+    min-height: 775px;
+    padding: 80px 0px;
 }
 .sectthree-header-container{
     display: flex;
     align-items: center;
-    padding-left: 100px;
-    height: 20%;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    height: auto;
+    min-height: 20%;
 }
 .sectthree-header{
-    
+    height: 100%;
     h2{
         font-family: 'alter', sans-serif;
-        font-size: 72px;
+        font-size: clamp(1.75rem, 4vw + 1rem, 4.5rem);
         font-weight: bold;
     }
 }
@@ -218,12 +221,15 @@ a{
     height: 50%;
     background-color: white;
     border-radius: 5px;
+    container-type: inline-size;
 }
 .sectfour-card-header{
     padding: 24px 0px 0px 24px;
+    width: 100%;
+    height: 100%;
     h2{
-        font-size: 64px;
         font-family: 'alter', sans-serif;
+        font-size: clamp(1.5rem, 12cqw, 4rem);
         font-weight: bold;
     }
 }
@@ -251,7 +257,7 @@ a{
     flex-direction: column;
     align-items: center;
     width: 100%;
-    height: 1050px;
+    padding: 0px 20px 80px 20px;
     background-color: #e5ecf4;
     gap: 24px;
 }
@@ -279,8 +285,9 @@ a{
 }
 .sectfive-cards{
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    width: 50%;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    width: 100%;
+    max-width: 1248px;
     gap: 24px;
     padding-bottom: 48px;
 }
@@ -288,15 +295,17 @@ a{
     display: flex;
     flex-direction: column;
     gap: 24px;
-    width: 400px;
+    width: 100%;
     height: 500px;
     background-color: white;
     border-radius: 5px;
 }
 .sectfive-card-image{
-    height: 300px;
+    height: 65%;
+    width: 100%;
     img{
-        height: 300px;
+        width: 100%;
+        height: 100%;
         border-radius: 5px;
     }
 }
@@ -381,4 +390,58 @@ a{
 .sectfive-button button:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+@media screen and (max-width: 1440px) {
+    .sect-two{
+        grid-template-columns: 1fr;
+        min-height: unset;
+        height: auto;
+        
+    }
+    .secttwo-header{
+        padding-left: 5vw;
+        padding-bottom: 10px;
+        height: auto;
+    }
+    .secttwo-more{
+        height: auto;
+        order: 1;
+        gap: 40px;
+    }
+    .secttwo-i-text{
+        padding-left: 5%;
+    }
+    .secttwo-image{
+        order: 2;
+        width: 100%;
+        height: 350px;
+        padding: 0px;
+        margin-top: 20px;
+        img{
+            width: 100%;
+            height: 350px;
+
+        }
+    }
+    .secttwo-i-price{
+        display: flex;
+        flex-direction: column;
+        
+    }
+    .secttwo-i-price p::before{
+        content: "1 hr";
+        display: block;
+        margin-bottom: 24px;
+    }
+}
+@media screen and (max-width: 1300px) {
+    .sectthree-cards{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .sectthree-cards{
+        grid-template-columns: 1fr 1fr;
+    }
+    
 }
