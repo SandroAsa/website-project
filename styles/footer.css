@@ -57,3 +57,7 @@
 .footer-about a:hover{
     text-decoration: underline;
 }
+.footer-button button:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
