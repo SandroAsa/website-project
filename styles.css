@@ -138,6 +138,7 @@ a{
     width: 100%;
     min-height: 775px;
     padding: 80px 0px;
+    background-color: white;
 }
 .sectthree-header-container{
     display: flex;
@@ -152,6 +153,7 @@ a{
         font-family: 'alter', sans-serif;
         font-size: clamp(1.75rem, 4vw + 1rem, 4.5rem);
         font-weight: bold;
+        color: black;
     }
 }
 .sectthree-info{
@@ -165,6 +167,7 @@ a{
     p{
         font-family: 'alter', sans-serif;
         font-size: 22px;
+        color: black;
     }
 }
 .sectthree-info-button{
@@ -201,6 +204,7 @@ a{
     font-family: 'alter', sans-serif;
     font-size: 36px;
     font-weight: bold;
+    color: black;
 }
 .sect-four{
     display: flex;
@@ -230,6 +234,7 @@ a{
         font-family: 'alter', sans-serif;
         font-size: clamp(1rem, 12cqw, 3rem);
         font-weight: bold;
+        color: black;
     }
 }
 .sectfour-card-info{
@@ -242,6 +247,7 @@ a{
     p{
         font-family: 'publicsans', sans-serif;
         font-size: clamp(1rem, 12cqw, 2.5rem);
+        color: black;
     }
 }
 .sectfour-card-cite{
@@ -319,6 +325,7 @@ a{
         font-family: 'publicsans', sans-serif;
         font-size: 12px;
         font-weight: lighter;
+        color: gray;
     }
 }
 .sectfive-card-info-info{
