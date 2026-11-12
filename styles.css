@@ -11,7 +11,7 @@ a{
     font-size: 20px;
     color: white;
     text-decoration: none;
-    font-family: 'alter', sans-serif;
+    font-family: 'publicsans', sans-serif;
 }
 .sect-one{
     display: flex;
@@ -255,6 +255,7 @@ a{
     p{
         font-family: 'publicsans', sans-serif;
         font-size: 24px;
+        color: black;
     }
 }
 .sect-five{
@@ -279,6 +280,7 @@ a{
         font-family: 'alter', sans-serif;
         font-size: 72px;
         font-weight: bold;
+        color: black;
     }
 }
 .sectfive-info-text{
@@ -286,6 +288,7 @@ a{
     p{
         font-family: 'publicsans', sans-serif;
         font-size: 20px;
+        color: black;
     }
 }
 .sectfive-cards{
@@ -420,12 +423,13 @@ a{
     .secttwo-image{
         order: 2;
         width: 100%;
-        height: 350px;
+        
+        height: 300px;
         padding: 0px;
         margin-top: 20px;
         img{
             width: 100%;
-            height: 350px;
+            height: 300px;
 
         }
     }
@@ -478,6 +482,12 @@ a{
         padding-left: 48px;
     }
 }
+@media screen and (max-width: 660px) {
+    .sectone-header{
+        font-size: 60px;
+    }
+    
+}
 @media screen and (max-width: 624px) {
     .secttwo-more{
         display: grid;
@@ -494,5 +504,36 @@ a{
         button{
             width: 100px;
         }
+    }
+}
+@media screen and (max-width: 350px) {
+    .secttwo-more{
+        width: 100vw;
+    }
+    .secttwo-header{
+        width: 100vw;
+    }
+    .secttwo-image{
+        width: 100vw;
+    }
+    .secttwo-i-text{
+        min-width: unset;
+        width: 100vw;
+        padding: 0;
+        a{
+            font-size: 25px;
+        }
+        p{
+            font-size: 15px;
+        }
+        h3, p{
+            width: 100vw;
+        }
+    }
+    .secttwo-i-price{
+        width: 100vw;
+    }
+    .sectfive-card{
+        width: 80vw;
     }
 }

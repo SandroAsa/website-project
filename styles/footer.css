@@ -1,3 +1,8 @@
+a{
+    color: white;
+    text-decoration: none;
+    font-family: 'publicsans', sans-serif;
+}
 .footer{
     height: 500px;
     background-color: black;
@@ -30,6 +35,10 @@
     display: flex;
     flex-direction: column;
     gap: 24px;
+    height: fit-content;
+}
+.footer-extra{
+    font-family: 'publicsans', sans-serif;
 }
 .footer-button button{
     width: 150px;
@@ -60,4 +69,12 @@
 .footer-button button:hover{
     cursor: pointer;
     text-decoration: underline;
+}
+@media screen and (max-width:1100px) {
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+    }
+    .footer-button{
+        .footer-image{}
+    }
 }
