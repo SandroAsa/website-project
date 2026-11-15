@@ -447,7 +447,9 @@ a{
 @media screen and (max-width: 1024px) {
     .sectthree-info{
         flex-direction: column;
+        justify-content: center;
         gap: 24px;
+        text-align: center;
     }
     .sectthree-cards{
         grid-template-columns: 1fr 1fr;
@@ -471,10 +473,18 @@ a{
         padding: 0px 24px;
     }
     .sectthree-info{
-        padding: 50px 0px 50px 48px;
+        padding: 50px 0px 50px 12px;
+    }
+    .sectthree-info-text{
+        width: fit-content;
+        justify-content: center;
+    }
+    .sectthree-info-button{
+        display: flex;
+        justify-content: flex-start;
     }
     .sectthree-header-container{
-        padding-left: 48px;
+        padding-left: 12px;
     }
 }
 @media screen and (max-width: 660px) {
