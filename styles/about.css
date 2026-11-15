@@ -97,6 +97,7 @@
     justify-content: center;
     background-color: white;
     padding-top: 100px;
+    gap: 24px;
 }
 .sectthree-header{
     display: flex;
@@ -107,6 +108,43 @@
     font-weight: bolder;
 }
 .sectthree-images{
+    width: 80%;
+    margin: 0 10%;
+    margin-bottom: 24px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 24px;
+}
+.sectthree-images-image{
+    height: fit-content;
+    img{
+        width: 100%;
+        height: 100%;
+    }
+    img:hover{
+        opacity: 0;
+        transition: .3s ease;
+        
+    }
+}
+#s-three-imgs-img-one{
+    background-color: #ABA9A1;
+}
+#s-three-imgs-img-two, #s-three-imgs-img-three{
+    background-color: lightgray;
+}
+#s-three-imgs-img-four{
+    background-color: tan;
+}
+#s-three-imgs-img-five{
+    background-color: #D6DCE2;
+}
+#s-three-imgs-img-six{
+    background-color: #97BFCF;
+}
+#s-three-imgs-img-seven{
+    background-color: lightblue;
+}
+#s-three-imgs-img-eight{
+    background-color: #7E8CA2;
 }
