@@ -1,0 +1,16 @@
+.sect-one{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    align-items: center;
+}
+.sectone-header{
+    width: 75%;
+    h1{
+        display: inline;
+        font-family: 'alter', sans-serif;
+        color: black;
+        font-weight: bold;
+        font-size: clamp(2rem, 4rem + 2vw, 7.5rem)
+    }
+}
