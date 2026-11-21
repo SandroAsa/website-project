@@ -6,8 +6,8 @@
     transform: translate(-50%);
     background-color: black;
     border-radius: 5px;
-    width: 60%;
-    height: 150px;
+    width: 80%;
+    height: 100px;
     justify-content: space-between;
     z-index: 1000;
     a{
@@ -24,7 +24,7 @@
 .header-right{
     position: relative;
     top: 20px;
-    right: 15%;
+    right: 8%;
     i{
         font-size: 40px;
         color: white;
@@ -36,11 +36,11 @@
 .header-image{
     position: relative;
     top: 10%;
-    left: 5%;
-    height: 120px;
+    left: 2%;
+    height: 80%;
     img{
         width: 300px;
-        height: 120px;
+        height: 100%;
     }
 }
 .header-links{

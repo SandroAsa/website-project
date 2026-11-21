@@ -21,6 +21,7 @@ a{
 .sectone-info{
     display: flex;
     flex-direction: column;
+    align-items: center;
     gap: 50px;
 }
 .sectone-header{
@@ -28,11 +29,13 @@ a{
     color: white;
     font-family: 'alter', sans-serif;
     font-weight: bolder;
+    text-align: center;
 }
 .sectone-text{
     font-size: 30px;
     color: white;
     font-family: 'alter', sans-serif;
+    width: 50%;
 }
 .sectone-button{
     display: flex;
@@ -144,6 +147,7 @@ a{
 }
 .sectthree-header{
     height: 100%;
+    text-align: center;
     h2{
         font-family: 'alter', sans-serif;
         font-size: clamp(1.75rem, 4vw + 1rem, 4.5rem);
@@ -214,20 +218,22 @@ a{
 .sectfour-card{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    width: 20%;
+    justify-content: space-evenly;
+    max-width: 800px;
+    width: 65%;
     height: 75%;
     background-color: white;
     border-radius: 5px;
     container-type: inline-size;
 }
 .sectfour-card-header{
-    padding: 24px 0px 0px 24px;
+    padding-top: 24px;
     width: 100%;
     height: auto;
+    text-align: center;
     h2{
         font-family: 'alter', sans-serif;
-        font-size: clamp(1rem, 12cqw, 3rem);
+        font-size: clamp(1rem, 12cqw, 5rem);
         font-weight: bold;
         color: black;
     }
@@ -239,6 +245,7 @@ a{
 }
 .sectfour-card-text{
     padding: 0px 24px;
+    text-align: center;
     p{
         font-family: 'publicsans', sans-serif;
         font-size: clamp(1rem, 12cqw, 2.5rem);
@@ -271,6 +278,7 @@ a{
 }
 .sectfive-info-header{
     padding-top: 48px;
+    text-align: center;
     h2{
         font-family: 'alter', sans-serif;
         font-size: 72px;
@@ -279,7 +287,8 @@ a{
     }
 }
 .sectfive-info-text{
-    width: 40%;
+    max-width: 600px;
+    width: 60%;
     p{
         font-family: 'publicsans', sans-serif;
         font-size: 20px;
@@ -476,17 +485,32 @@ a{
         padding: 50px 0px 50px 12px;
     }
     .sectthree-info-text{
-        width: fit-content;
+        max-width: unset;
+        display: flex;
+        width: 100%;
         justify-content: center;
     }
     .sectthree-info-button{
         display: flex;
         justify-content: flex-start;
     }
-    .sectthree-header-container{
-        padding-left: 12px;
+    .sectthree-header-container, .sectthree-info{
+        display: flex;
+        align-items: center;
+        padding-left: 0px;
+    }
+    .sectfour-card{
+        gap: 24px;
+        height: fit-content;
+    }
+    .sectfour-card-text{
+        height: calc(fit-content + 10vh)
+    }
+    .sect-five{
+        padding-right: 10px;
     }
 }
+
 @media screen and (max-width: 660px) {
     .sectone-header{
         font-size: 60px;
@@ -494,6 +518,9 @@ a{
     
 }
 @media screen and (max-width: 624px) {
+    .sectone-text{
+        width: 80%;
+    }
     .secttwo-more{
         display: grid;
         grid-template-columns: 1fr;
@@ -523,8 +550,9 @@ a{
     }
     .secttwo-i-text{
         min-width: unset;
-        width: 100vw;
+        width: 90vw;
         padding: 0;
+        padding-left: 16px;
         a{
             font-size: 25px;
         }
@@ -532,13 +560,16 @@ a{
             font-size: 15px;
         }
         h3, p{
-            width: 100vw;
+            width: 90vw;
         }
     }
     .secttwo-i-price{
         width: 100vw;
     }
     .sectfive-card{
-        width: 80vw;
+        width: 90vw;
+    }
+    .sect-five{
+        padding: 0 5vw 80px 5vw;
     }
 }

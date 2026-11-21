@@ -38,6 +38,8 @@ a{
     height: fit-content;
 }
 .footer-extra{
+    display: flex;
+    align-items: center;
     font-family: 'publicsans', sans-serif;
 }
 .footer-button button{
@@ -71,10 +73,11 @@ a{
     text-decoration: underline;
 }
 @media screen and (max-width:1100px) {
+    .footer-info-parent{
+        gap: 5px;
+    }
     .footer-container{
         grid-template-columns: 1fr 1fr;
     }
-    .footer-button{
-        .footer-image{}
-    }
+
 }
