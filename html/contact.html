@@ -13,26 +13,32 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
 </head>
 <body>
-    <div class="header">
-        <div class="header-left">
-            <div class="header-image">
-                <a href="../index.html">
-                    <img src="https://static.wixstatic.com/media/84770f_d312c7d8b7b24a12bfc6b617a51aa402~mv2.png"
-                    alt="mtsleet">
-                </a>
+    <nav class="navbar sm:navbar-expand bg-1 fg-2">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="../index.html"><button class="nav-button"><span style="font-weight: bold;">Mount Sleet</span> <br> Winter Tours</button></a>
+        <button class="btn-icon navbar-toggler" type="button" data-bs-toggle="drawer" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" id="navbarNavAltMarkup" aria-labelledby="navbarNavAltMarkupLabel">
+        <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarNavAltMarkupLabel">Menu</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="drawer" aria-label="Close"></button>
+        </div>
+        <div class="drawer-body">
+            <div class="nav nav-pills navbar-nav">
+                <a class="nav-link" href="./about.html">About</a>
+                <a class="nav-link" href="./trails.html">Trails</a>
+                <a class="nav-link" href="./blog.html">Blog</a>
+                <a class="nav-link" href="./contact.html"><span style="text-decoration: underline;">Contact</span></a>
             </div>
-            <div class="header-links">
-                <a href="./about.html">About</a>
-                <a href="./trails.html">Trails</a>
-                <a href="./blog.html">Blog</a>
-                <a href="./contact.html">Contact</a>
+            <div class="nav nav-pills navbar-nav navright">
+                <i class="fa-solid fa-circle-user"></i>
+                <a href="">Log In</a>
             </div>
         </div>
-        <div class="header-right">
-            <i class="fa-solid fa-circle-user"></i>
-            <a href="">Log In</a>
-        </div>
+        </dialog>
     </div>
+    </nav>
     <section class="sect-one">
         <div class="sectone-image">
             <img src="https://static.wixstatic.com/media/84770f_3d76cd3ade55477ca9727a7695b8e102~mv2.jpg/v1/fill/w_1920,h_596,fp_0.50_0.50,q_85,usm_0.66_1.00_0.01,enc_auto/7050118f05f34688ad1b5b544f3e4122.jpg"
